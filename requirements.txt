@@ -1,0 +1,12 @@
+# Data Ingestion & Manipulation
+pandas>=2.0.0
+numpy>=1.24.0
+requests>=2.31.0
+
+# Statistical Analysis & Hypothesis Testing
+scipy>=1.10.0
+statsmodels>=0.14.0
+
+# Scientific Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
