@@ -96,6 +96,22 @@ Evaluating co-dependency profiles provides critical insights into the biological
 ## 5. Conclusion & Translational Implications
 
 1. **Universal Pan-Cancer Dependency**: Our systematic DepMap Chronos benchmarking conclusively demonstrates that *PLK1* operates as an invariant, pan-essential mitotic kinase across solid and hematologic tumor lineages. With median dependency scores tightly coupled around $-1.0$ and minimal differential variance ($\Delta \approx -0.07$ to $+0.13$, FDR $q > 0.05$), therapeutic sensitivity to *PLK1* knockout is fundamentally tissue-agnostic.
+### In-Depth Mechanistic Insight: Tissue-Agnostic Sensitivity of *PLK1*
+
+* **The Concept of Tissue Agnosticism**:
+  In oncological target discovery, *tissue agnosticism* indicates that a molecular vulnerability is driven by intrinsic cell biological machinery rather than lineage-restricted transcriptional wiring (such as lineage dependency transcription factors like *MITF* in melanoma or *SOX10* in neural crest lineages). 
+
+* **Mechanistic Basis in Mitotic Machinery**:
+  *PLK1* controls non-redundant catalytic checkpoints necessary for every eukaryotic cell cycle:
+  1. **Centrosome Maturation & Bipolar Spindle Assembly**: Phosphorylates pericentriolar matrix components to establish functional spindle poles.
+  2. **Kinetochore-Microtubule Attachments**: Stabilizes tension-bearing attachments prior to anaphase.
+  3. **Mitotic Exit & Cytokinesis**: Coordinates with the anaphase-promoting complex/cyclosome (APC/C) and PRC1 to drive cleavage furrow ingression.
+  Because these processes are biophysically identical across all malignant cell types regardless of embryonic germ layer origin (ectoderm, mesoderm, or endoderm), genetic ablation of *PLK1* triggers catastrophic spindle assembly checkpoint (SAC) arrest followed by mitotic catastrophe and apoptosis.
+
+* **Clinical & Translational Implications**:
+  1. **Absence of Lineage Biomarkers**: Solid tumors (e.g., breast, lung, colorectal) and hematologic lineages (e.g., myeloid, lymphoid) demonstrate indistinguishable median Chronos essentiality scores ($\sim -0.91$ to $-0.94$). Therefore, classical histology-based patient stratification cannot isolate a hyper-sensitive clinical cohort.
+  2. **The Therapeutic Index Challenge**: Because *PLK1* dependency is cell-division-centric rather than tumor-tissue-restricted, normal proliferating tissues (such as hematopoietic stem/progenitor cells and intestinal crypt epithelium) depend on the exact same pathway. This explains why historical first-generation catalytic PLK1 inhibitors (e.g., Volasertib, BI 2536) encountered dose-limiting hematologic toxicities (neutropenia, thrombocytopenia).
+  3. **Future Strategic Direction**: Exploiting a tissue-agnostic pan-essential target requires innovative delivery mechanisms—such as tumor-antigen-directed antibody-drug conjugates (ADCs) or synthetic lethal biomarker combinations (e.g., *TP53*-mutant or mitotic checkpoint-defective backgrounds)—to selectively deliver inhibition to neoplastic cells while sparing healthy renewing tissue.
 2. **Clinical Stratification Challenges**: Because *PLK1* lacks lineage-restricted hyper-vulnerabilities, conventional histology-guided patient selection is unlikely to yield preferential therapeutic windows. This molecular profile provides a mechanistic explanation for why historical small-molecule PLK1 inhibitors (e.g., Volasertib) encountered narrow therapeutic indices and dose-limiting myelosuppression.
 3. **Co-Dependency & Combinatorial Rationale**: The strong functional synergy observed with *CDK7* ($r \approx 0.42$, $p < 10^{-15}$) indicates that tumors acutely dependent on mitotic spindle integrity simultaneously rely on transcriptional cycling machinery. Future therapeutic strategies should explore dual-pathway combinatorial regimens (e.g., PLK1 plus CDK7/transcription inhibition) or antibody-drug conjugates (ADCs) to bypass systemic toxicities while exploiting universal mitotic addiction.
 ---
